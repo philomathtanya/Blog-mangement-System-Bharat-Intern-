@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read-Blog</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body style=" background-color: peachpuff">
+<div class="container w-100 border bg-white mt-5 p-3 mx-auto">
+    <h2 class="text-primary"><%= item.title %></h2>
+    <h5>By: <%= item.name %></h5>
+    <h5 class="">Contact us: <%= item.email %></h5>
+</div>   
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner mt-5 p-5 w-50 " style="margin-left: 25%;">
+    <div class="carousel-item active">
+      <img src="<%= item.photo[0] %>" class="d-block w-100 " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="<%= item.photo[1] %>" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="<%= item.photo[2] %>" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev w-50" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next w-50" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container border bg-white mt-3 p-3">
+    <p><%= item.text %></p>
+</div>
+
+</body>
+</html>
