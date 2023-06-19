@@ -8,4 +8,4 @@
 ->Web Technologies used: Html, Css, JS ,Express , ejs, MongoDB, NodeJS
 
 ->This repository contains the code for a Blog Management System Website, which allows users to create and manage blog posts. The website provides an intuitive interface 
-  for users to add text, images, and other elements required for creating engaging blog content.
+  for users to add text, images, and other elements required for creating engaging blog content
